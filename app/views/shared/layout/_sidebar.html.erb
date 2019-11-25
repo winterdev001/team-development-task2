@@ -33,8 +33,15 @@
             <a href="#" class="nav-link">
               <i class="fa fa-circle-o nav-icon"></i>
               <p>
-                <%= agenda.title %>
-                <i class="right fa fa-angle-left"></i>
+                <div class="row">
+                  <div class="col-md-6 mt-2">
+                    <%= agenda.title %>
+                    <i class="right fa fa-angle-left"></i>
+                  </div>
+                  <div class="col-md-6">
+                    <%= link_to 'Delete Agenda', agenda, method: :delete, data: { confirm: 'Are you sure?' } ,class:"btn btn-danger btn-sm"%>
+                  </div>
+                </div>
               </p>
             </a>
             <ul class="nav nav-treeview" style="display: block;">
