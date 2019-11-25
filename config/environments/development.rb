@@ -68,4 +68,8 @@ Rails.application.configure do
     Bullet.console = true
     Bullet.rails_logger = true
   end
+
+  # LetterOpenerWeb.configure do |config|
+  #   config.letters_location = Rails.root.join('your', 'new', 'path')
+  # end
 end
